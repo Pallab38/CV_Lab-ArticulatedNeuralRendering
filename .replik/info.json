@@ -1,0 +1,13 @@
+{
+    "cpus": "4",
+    "docker_shm": "32g",
+    "gpus": "1",
+    "is_simple": false,
+    "memory": "8g",
+    "minimum_required_running_hours": 5,
+    "name": "cvgLab_anr",
+    "replik_version": "0.6.0",
+    "stdout_to_file": false,
+    "tag": "pallab_das/replik_cvg_lab_anr",
+    "username": "pallab_das"
+}

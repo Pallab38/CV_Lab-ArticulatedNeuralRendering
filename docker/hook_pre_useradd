@@ -1,0 +1,17 @@
+# add Dockerfile RUN's that are executed before the user is set
+RUN echo "pre-user hook"
+RUN apt-get install -y build-essential
+RUN conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
+RUN conda install -y -c conda-forge fvcore
+RUN conda install -y -c conda-forge yacs
+RUN conda install -y -c iopath iopath
+RUN conda install -y -c bottler nvidiacub
+RUN conda install -y pip
+RUN pip install scikit-image matplotlib imageio plotly
+RUN pip install opencv-python
+
+
+
+
+
+
