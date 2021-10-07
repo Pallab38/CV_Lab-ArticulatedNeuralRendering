@@ -19,7 +19,7 @@ replik schedule --script="main.py"
 ### Dataset
 We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only using three videos where 3 subject performing warmup and punching. 
 #### Data Preparation
-Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2.
+1. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2.
 ![Mesh Normals](/images/normal_all.jpg) <br>
 
 
