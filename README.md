@@ -18,8 +18,13 @@ replik schedule --script="main.py"
 
 ### Dataset
 We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only using three videos where 3 subject performing warmup and punching. 
+
+#### Structure of the dataset directory
+![dir_tree](/images/dir_tree.png) <br>
+
 #### Data Preparation
-1. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2.
+1. First we extract the smpl mesh. Following gif shows extracted mesh on top of original frames for a given subject. <img src="/images/fitted_smpl_377.gif" width="480" height="480"><br>
+2. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2.
 ![Mesh Normals](/images/normal_all.jpg) <br>
 
 
