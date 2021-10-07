@@ -1,6 +1,6 @@
 # cvgLab_anr
 
-## Articulated Neural Rendering [[1]](#1).
+## Articulated Neural Rendering for Virtual Avatars [[1]](#1).
 ![Network Pipeline](/images/pipe00.jpg) <br>
 Given a 3D body mesh, ANR generates a detailed avatar of that human body mesh using learned neural texture of the person. The 16 channel neural texture is rendered onto the image space by a weak perspective projection using rasterized IUV images of the mesh. The Neural renderer of our method is divided into two parts. First stage, R_1 converts the neural texture into another refined latent representation. Then the output of R_1 is concatenated with normal to be used as the input of second stage, R_2. R_2 produces an RGB rendering and a foreground mask.
 
@@ -15,7 +15,6 @@ replik schedule --script="main.py"
 ```
 
 
-
 ### Dataset
 We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only using three videos where 3 subject performing warmup and punching. 
 
@@ -23,8 +22,9 @@ We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only us
 ![dir_tree](/images/dir_tree.png) <br>
 
 #### Data Preparation
-##### 1. First we extract the smpl mesh. Following gif shows extracted mesh on top of original frames for a given subject. <br> <img src="/images/fitted_smpl_377.gif" width="480" height="480"><br>
-##### 2. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2. <br>
+##### 1. First we extract the smpl mesh. Following gif shows extracted mesh on top of original frames for a given subject. <br>
+<img src="/images/fitted_smpl_377.gif" width="480" height="480"><br>
+##### 2. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2. 
 ![Mesh Normals](/images/normal_all.jpg) <br>
 
 
@@ -35,14 +35,6 @@ We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only us
 ![386](/images/386_predictions.jpg) <br>
 #### Generated RGB and foreground mask for the subject performing punching 02.
 ![387](/images/387_predictions.jpg) <br>
-
-
-
-
-
-
-
-
 
 
 
