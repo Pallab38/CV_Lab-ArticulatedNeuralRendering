@@ -23,8 +23,8 @@ We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only us
 ![dir_tree](/images/dir_tree.png) <br>
 
 #### Data Preparation
-##### 1. First we extract the smpl mesh. Following gif shows extracted mesh on top of original frames for a given subject. <img src="/images/fitted_smpl_377.gif" width="480" height="480"><br>
-##### 2. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2.
+##### 1. First we extract the smpl mesh. Following gif shows extracted mesh on top of original frames for a given subject. <br> <img src="/images/fitted_smpl_377.gif" width="480" height="480"><br>
+##### 2. Following mesh normals are created to concate with the output of R_1 to be used as the input of R_2. <br>
 ![Mesh Normals](/images/normal_all.jpg) <br>
 
 
