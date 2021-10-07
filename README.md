@@ -1,7 +1,21 @@
 # cvgLab_anr
 
 ## Articulated Neural Rendering [[1]](#1).
-We used  Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. 
+![Network Pipeline](/images/pipe00.jpg) <br>
+Given a 3D body mesh, ANR generates a detailed avatar of that human body mesh using learned neural texture of the person. The 16 channel neural texture is rendered onto the image space by a weak perspective projection using rasterized IUV images of the mesh. The Neural renderer of our method is divided into two parts. First stage, R_1 converts the neural texture into another refined latent representation. Then the output of R_1 is concatenated with normal to be used as the input of second stage, R_2. R_2 produces an RGB rendering and a foreground mask.
+### Dataset
+We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only using three videos where 3 subject performing warmup and punching. 
+
+
+### Run on Replik 
+To run the **main.py** file on replik: 
+1. Initialize the Replik project (``` replik init ```)
+2. Include path (```/home/group-cvg/datasets/easymocap```) for data in **.replik/paths.json**. 
+3. Run following from the Replik project directory:
+```
+replik schedule --script="main.py"
+```
+
 
 
 
