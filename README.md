@@ -28,6 +28,15 @@ We use Lightstage data of the EasyMocap Dataset [[2]](#2) by ZJU. We are only us
 ![Mesh Normals](/images/normal_all.jpg) <br>
 
 
+### Training 
++ Input: Around 44,000 frames with image resolution 256x 256 for all the three subjects.
++ Output: Rendered RGB and a foreground mask.
++ Loss: L_1 for rendererd RGB and Binary Cross Entropy for mask.
++ Optimizer: Adam optimizer with learning rate 0.002.
++ GPU: GTX 1080.
++ Runtime: Around 85 hours.
+
+
 ### Result 
 #### Generated RGB and foreground mask for the subject performing warmup.
 ![377](/images/377_predictions.jpg) <br>
