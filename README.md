@@ -1,4 +1,4 @@
-# cvgLab_anr
+# Computer Vision Lab: MA-INF:2307 
 
 ## Articulated Neural Rendering for Virtual Avatars [[1]](#1).
 ![Network Pipeline](/images/pipe00.jpg) <br>
